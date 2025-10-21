@@ -202,7 +202,8 @@ namespace SystemsExample
     // Основний клас програми
     class Program
     {
-        static void Main(string[] args)
+        // Renamed to avoid conflicting entry point when running the solution from the workspace root.
+        static void LegacyMain(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Демонстрація роботи з системами лінійних рівнянь (СЛАР) та використання інтерфейсу.");
